@@ -30,7 +30,6 @@ show_always = false
 
 [directory]
 truncation_length = 3
-truncation_symbol = "…/"
 read_only_style = "197"
 read_only = "  "
 format = "at [$path]($style)[$read_only]($read_only_style) "
@@ -46,16 +45,14 @@ symbol = " "
 [git_branch]
 symbol = " "
 format = "on [$symbol$branch]($style) "
-truncation_length = 4
-truncation_symbol = "…/"
-style = "bold green"
+truncation_symbol = ""
+style = "bold purple"
 
 [git_status]
-format = '[\($all_status$ahead_behind\)]($style) '
-style = "bold green"
-conflicted = "🏳"
+format = '[\( $all_status$ahead_behind\)]($style) '
+style = "bold purple"
+conflicted = " "
 up_to_date = " "
-untracked = " "
 ahead = "⇡${count}"
 diverged = "⇕⇡${ahead_count}⇣${behind_count}"
 behind = "⇣${count}"
@@ -68,48 +65,64 @@ windows_starship = "/mnt/c/Program Files/starship/bin/starship.exe"
 
 [aws]
 symbol = "  "
+style = "bold #ffa6b5"
 
 [c]
 symbol = " "
+style = "bold #ffa6b5"
 
 [conda]
 symbol = " "
+style = "bold #ffa6b5"
 
 [docker_context]
 symbol = " "
+style = "bold #ffa6b5"
 
 [haskell]
 symbol = " "
+style = "bold #ffa6b5"
 
 [hg_branch]
 symbol = " "
+style = "bold #ffa6b5"
 
 [java]
 symbol = " "
+style = "bold #ffa6b5"
 
 [lua]
 symbol = " "
+style = "bold #ffa6b5"
 
 [memory_usage]
 symbol = " "
+style = "bold #ffa6b5"
 
 [nim]
 symbol = " "
+style = "bold #ffa6b5"
 
 [nodejs]
 symbol = " "
+style = "bold #ffa6b5"
 
 [python]
 symbol = " "
+style = "bold #ffa6b5"
 
 [rlang]
 symbol = "ﳒ "
+style = "bold #ffa6b5"
 
 [ruby]
 symbol = " "
+style = "bold #ffa6b5"
 
 [rust]
 symbol = " "
+style = "bold #ffa6b5"
 
 [scala]
 symbol = " "
+style = "bold #ffa6b5"
